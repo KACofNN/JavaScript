@@ -1,0 +1,11 @@
+totalLevels = prompt("How many levels do you have?")
+
+levelsSquared = Math.pow(totalLevels, 2);
+
+totalXP = 4.5 * Math.pow(totalLevels, 2) - 162.5 * totalLevels + 2220
+
+totalBottleStacks = Math.floor(totalXP/1395)
+
+totalExtraBottles = ((Math.floor(totalXP/1395))*64-(totalXP/1395))
+
+window.alert("You have " + totalLevels + " levels, which translates into " + totalXP + " XP, so you should be able to create " + totalBottleStacks + " stacks and " + totalExtraBottles + " Bottles O' Enchanting")
